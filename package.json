@@ -1,0 +1,17 @@
+{
+  "name": "flyingpanda-root",
+  "version": "1.0.0",
+  "scripts": {
+    "install-client": "cd frontend && npm install",
+    "build-client": "cd frontend && npm run build",
+    "build": "npm run install-client && npm run build-client",
+    "start": "node backend/index.js"
+  },
+  "dependencies": {
+    "express": "^5.2.1",
+    "cors": "^2.8.6"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.11"
+  }
+}
