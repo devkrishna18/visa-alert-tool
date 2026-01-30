@@ -9,7 +9,8 @@ app.use(cors());
 app.use(express.json());
 app.use(logger);
 
-app.use("/alerts", alertRoutes);
+// Add "/api" to the start of the route
+app.use("/api/alerts", alertRoutes);
 
 app.use((err, req, res, next) => {
   res.status(500).json({ message: err.message });
